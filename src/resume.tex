@@ -1,63 +1,178 @@
 \documentclass{ExpressiveResume}
-
+\usepackage{xcolor}
+\usepackage{dashrule}
 % ----- Resume -----
 \begin{document}
 
 % ----- Name + Contact Information -----
 \resumeheader[
-    firstname=John,
-    middleinitial=N,
-    lastname=Doe,
-    email=john.doe@example.com,
-    phone=123-456-7890,
-    linkedin=johndoe,
-    github=johndoe,
-    city=Town,
-    state=State,
-    qrcode=./images/qr.png,
-    fixobjectivespacing=true
+    firstname=Martina,
+    lastname=Oliver Huidobro,
+    email=martinaoliver1@gmail.com,
+    phone=+447883738907,
+    linkedin=martinaoliver,
+    github=martinaoliver,
+    city=London %TODO add nationality, settled status
+
 ]
 
-\objective{A software engineering graduate with 2 years of work
-    experience at various internships \\ seeking opportunities to develop
-    web/mobile applications for Company XYZ.}
+\objective{Computational biologist with interest in mathematical modelling, AI and drug discovery.}
 
 % ----- Education -----
 \section{Education}
 
-\experience{Bachelor of Science}{Software Engineering}{Aug 2018}{May 2022}{
-    \noindent Fabulous Honors College \hfill GPA: 4.00 \newline
-    Super Duper University, Town, State \newline
+\experience{Mathematical Biology applied to Genetic Engineering}{PhD}{October 2020}{April 2024}{
+    \noindent Imperial College London, Centre for Integrative Systems and Bioinformatics \hfill EPSRC Scholarship  \newline
+    Focus on mathematical modelling and machine learning approaches to study gene expression patterns
 }
+
+\experience{Systems and Synthetic Biology}{MRes}{Oct 2019}{September 2020}{
+    \noindent Imperial College London, Centre for Integrative Systems and Bioinformatics \hfill EPSRC Scholarship, Distinction 75\%  \newline
+Focus on dynamical systems, programming and statistics in biology
+}
+
+\experience{Biochemistry}{BSc}{October 2016}{Oct 2019}{
+    \noindent Imperial College London \hfill First Class Honours 71\%  \newline
+    Focus in Bioinformatics, Systems Biology, Metabolic Network Engineering.
+}
+
+\experience{European Baccalaureate}{High School Diploma}{October 2016}{Oct 2019}{
+    \noindent European School of Brussels I \hfill Highest degree of cohort, 92\% \newline
+    Focus in Advanced Maths, Physics, Biology and Chemistry.
+}
+
 
 % ----- Work Experience -----
-\section{Work Experience}
+\section{Research Experience}
 
-\experience{Summer Intern}{Radiant Software Systems}{Aug 2021}{May 2021}{
+\experience{PhD thesis}{\href{https://github.com/martinaoliver/PhD_handover/blob/main/PhD_thesis.pdf}{Data-driven modelling of robust Turing patterns in synthetic biofilms}}{Jan 2019}{Sept 2024}{
     \achievement{
-
-        Developed a mobile app in \tech{React Native} that was
-        downloaded 100k times on Google Play.
-
+    Thesis title: "Data-driven modelling of robust Turing patterns in synthetic biofilms" \faLink"
     }
-    \achievement{
+    \achievement{Developed and validated models of gene expression using mathematical tools such as PDE numerical solvers and stability analysis.}
 
-        Collaborated in an \tech{Agile/Scrum} team of 8 engineers to
-        deliver new features every 2 weeks.
+\achievement{Used machine learning techniques: Bayesian inference and regression methods for parameter fitting; neural networks for image clustering; PCA and t-SNE for understanding the parameter space; and MCMC for system optimisation.}
+\achievement{Generated and analysed large biological datasets using High Performance Computing clusters and multi-threading, and built SQL databases to store and query results.}
 
-    }
+\achievement{ \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4733248}{Collaborated with experimental biologists to validate models and guide experimental design for the production of novel biomaterials.}}
+
+\achievement{Speaker at \textbf{4 international conferences} in mathematical biology and received \textbf{2 best poster awards} (over 200 candidates).}
+
+\achievement{\textbf{Published in 3 high-impact scientific journals}: \faLink \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4733248}{[1] Cell Systems}
+            \href{https://doi.org/10.1111/1751-7915.13979}{[2] Journal of microbial biotech.} \href{https://www.biorxiv.org/content/10.1101/2024.09.09.611947v1}  {[3] PLOS ONE (in review)}
+            \href{https://github.com/martinaoliver/PhD_handover/blob/main/PhD_thesis.pdf}{[4] Spiral PhD Thesis} and \href{https://www.sciencedirect.com/science/article/pii/S2405471222004367}{peer reviewed other publications [5].}
+
+
 }
+
+
+}
+
+\experience{MRes Thesis}{Gene circuit optimization for tissue engineering}{Jan 2019}{Sept 2019}{
+    \achievement{
+        Thesis title: "Gene circuit optimization for tissue engineering "}
+    \achievement{Parameter optimization}}
+
+
+\experience{miCHIP}{miRNA detection method for pancreatic cancer diagnostics}{June 2018}{October 2018}{
+    \achievement{Obtained proof of concept for an early-stage diagnostics method
+    for Alzheimer’s, gaining experimental and computational experience with RNA synthesis and RNA structure prediction.}
+    \achievement{Parameter optimization}}
+
+\experience{BSc Thesis}{Molecular dynamics simulations of $\alpha$-synuclein in Parkinson's disease.}{Feb 2019}{July 2019}{
+\achievement{
+    Thesis title: "Molecular dynamics simulations of $\alpha$-synuclein in Parkinson's disease."}
+\achievement{Predicted protein structure and dynamics using GROMACS software and pyMOL visualization.}}
+
+
+\experience{Literature review}{Multiscale modelling of tumour-immune system interactions}{March 2018}{July 2018}{
+    \achievement{
+        Thesis title: ""}}
+
+
 
 % ----- Technical Projects -----
-\section{Technical Projects}
+\section{Professional Experience}
 
-\experience{Expressive Resume}{Personal Project}{Nov 2021}{Dec 2021}{
+\experience{Nucleate}{Activator Lead}{March 2023}{Feb 2024}{
     \achievement{
+        Organised events e.g. competition with UK biotech spinouts pitching for a £2M prize.}}
 
-        Created a \tech{\LaTeX} class that makes it easy for anyone to
-        quickly create a beautiful resume and cover letter.
+\experience{Imperial College London}{Teacher and Research Supervisor}{Oct 2020}{March 2024}{
+    \achievement{Supervised 20 MSc and BSc tudents in mathematical and computational biology.}
+    \achievement{Taught courses such as Programming for systems biology, Bioinformatics, Integrative systems biology, Maths.}}
 
-    }
-}
+\experience{miCHIP}{Co-founder}{Jan 2018}{--March 2019, Feb-April 2022}{
+\achievement{, start-up for early-stage Alzheimer’s diagnostics}
+    \achievement{As an undergrad, \textbf{secured £5k} funding and lab space to develop proof of concept.}
 
+\achievement{Finalists in start-up competitions: FONS-MAD, WE Innovate, SynBioUK Catalyse. News highlights: \faLink \href{https://www.imperial.ac.uk/news/187629/four-student-ideas-that-could-change/}{[1]} \href{https://www.imperial.ac.uk/news/190372/five-women-led-startups-building-better-future/}{[2]}}}
+
+
+\section{Relevant experience}
+
+\section{Relevant courses}
+\noindent\textbf{Genomic Data Science} John Hopkins University (current)\\
+\textbf{Advanced Learning algorithms} Stanford University (current)\\
+\textbf{Supervised machine learning} Stanford University - 2024
+
+\section{Personal projects}
+\experience{}{GenAI for eﬃcient carbon-capturing enzymes}{September 2024}{ongoing}{
+    \achievement{Fine-tuning LLM model to predict novel protein sequences with
+    increased activity}
+    \achievement{Fine-tuning HuggingFace model using modal cloud infrastructure.}}
+
+\experience{2nd place at the EF Bio x AI Hackathon}{Biodiversity scoring}
+ {November 2023}{}{
+    \achievement{Combining diverse spatial datasets including endangered species,
+        land type, genomic diversity to develop biodiversity metrics.}}
+
+\experience{Convention on Biological Diversity}{Peer reviewer}{Checkdate}{}
+
+\section{Hard Skills}
+\noindent \textbf{Maths:} Differential equations, numerical methods, stability analysis, statistics\\
+\textbf{Machine Learning:} Regression, Bayesian inference, PCA, t-SNE, MCMC optimization, LLMs, autoencoders\\
+\textbf{Programming:} Python, R, MATLAB, Bash, High-Performance Computing, Cloud computing, SQL, Git, scikit-learn, TensorFlow, pyTorch, Biopython, GROMACS, pyMOL
+
+\section{Soft Skills}
+    \noindent Project Management, collaboration with experimentalists, team work, time management, self-teaching
+
+\section{Languages}
+\noindent Spanish (Fluent), English (Fluent), French (Fluent), Portuguese (Beginner)
+
+\section{Publications \& Conferences}
+\noindent \faFile*[regular] \textbf{Publications}
+\vspace{0.2cm}
+\begin{itemize}
+    \small \item  \href{https://doi.org/10.1111/1751-7915.13979}{\textbf{Oliver Huidobro} et al. 2022. Synthetic spatial patterning in bacteria: advances based on novel diffusible signals. Microbial Biotechnology \faLink}
+    \small \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4733248}{Tica, \textbf{Oliver Huidobro} et al. 2024. A Three-Node Turing Gene Circuit Forms Periodic Spatial Patterns in Bacteria. Cell Systems \faLink}
+    \small \item  \href{https://doi.org/10.25560/111289}{\textbf{Oliver Huidobro} 2024. Data-driven modelling of robust Turing patterns in synthetic biofilms. PhD Thesis, Spiral \faLink}
+    \small \item \textbf{Oliver Huidobro}, Endres 2024. Effects of multistability, absorbing boundaries and growth on
+    Turing pattern formation. BioRxiv, in review at PLOS ONE
+\end{itemize}
+
+
+%\vspace{7pt}
+\noindent\color{gray!50}\hdashrule[0.5ex]{\linewidth}{0.2pt}{1.5pt}
+\vspace{0.2cm}
+
+\noindent \faUsers \textbf{Conferences}
+
+\noindent Speaker at:
+\begin{itemize}
+    \small \item Society for Math. Biology Conf. Seoul Univ. Korea. July 2024
+    \small \item British Applied Maths Colloquium. Newcastle UK. April 2024
+    \small \item London Mathematical Biology Conference. UCL, UK. Sept 2023
+    \small \item CDT BioDesign Engineering Conference. ICL, UK. May 2023
+\end{itemize}
+\vspace{0.2cm}
+Best Poster awards:
+\begin{itemize}
+    \small \item OKO International Symposium. Kyoto, Japan. August 2023
+    \small \item Physics of Life Conference. Harrogate, UK. March 2023
+
+\end{itemize}
+\vspace{10pt}
+\section{Personal Interests}
+\noindent Passionate about surfing and sailing (Qualified RYA Coastal Skipper and French Sailing instructor).
 \end{document}

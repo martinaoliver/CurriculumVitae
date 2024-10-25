@@ -124,7 +124,8 @@
     #5
     \vspace{7pt}
 }
-
+\newcommand{\divider}{\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\medskip}
+\newcommand{\smalldivider}{\vspace{-\baselineskip}\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}}
 %% ----- Four Required Configurations -----
 \renewcommand{\normalsize}{\fontsize{10pt}{12pt}\selectfont}
 \setlength{\textwidth}{7.5in}
